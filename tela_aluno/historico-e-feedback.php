@@ -40,7 +40,7 @@ require_once "../validador_acesso_aluno.php";
 				</tr>
 				<?php
 					$login = $_SESSION['login'];
-						$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+						$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 						$result = mysqli_query($link, 'select id_atividade,  nome_atividade, situacao_atividade, data_de_envio  from tb_atividade inner join tb_aluno
 									on login = id_aluno
 								where login = '."'".$login."' and (situacao_atividade = 'Em análise' or situacao_atividade = 'Reprovado' or situacao_atividade = 'Aprovado')" );
