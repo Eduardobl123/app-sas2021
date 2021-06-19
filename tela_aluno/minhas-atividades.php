@@ -49,7 +49,7 @@ require_once "../validador_acesso_aluno.php";
 							$consulta = 'select id_atividade,  tipo_participacao_nv1,nome_atividade, data_inicio, data_fim,ch_total_atividade, ch_aproveitada  from tb_atividade inner join tb_aluno
 							on login = id_aluno where login = '."'".$login."' and situacao_atividade = ". "'Salvo'";
 							
-							$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+							$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 					
 							$result = mysqli_query($link, $consulta);
 							$dado_atividades = mysqli_fetch_fields($result);//é adiquiro o array com os dados do usuario caso exista
