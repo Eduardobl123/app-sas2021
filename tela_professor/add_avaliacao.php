@@ -4,7 +4,7 @@
 	$situacao = $_POST['situacao'];
 
 
-	$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+	$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
     $str_insert = "update tb_atividade set feedback_professora = $descricao, situacao_atividade = $situacao
     where id_atividade = $id_atv;')";
     $result = mysqli_query($conexao, $str_insert);
