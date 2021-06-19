@@ -39,10 +39,10 @@ require_once "../validador_acesso_aluno.php";
 		
 		<?php
 			if(isset($_GET['id_atv'])){
-				$conexao2 = pg_connect("host=localhost port = 5432 dbname=bd_atividades_complementares user=postgres password=1247") or
+				$conexao2 = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas") or
 							die ("Não foi possível conectar ao servidor PostGreSQL");
 
-				$result = pg_query($conexao2, "select * from tb_atividade where id_atividade = '".$_GET['id_atv']."'");
+				$result = mysqli_query($conexao2, "select * from tb_atividade where id_atividade = '".$_GET['id_atv']."'");
 				$dado_atividades = pg_fetch_all($result);
 
 
