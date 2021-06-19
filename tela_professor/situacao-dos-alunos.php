@@ -39,7 +39,7 @@ require_once "../validador_acesso_professor.php";
 					<th>Situação (AP/RP)</th>
 				</tr>
 				<?php
-							$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+							$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 							$result = mysqli_query($link, "select pnome_aluno, unome_aluno, rga,ch_reconhecida, situacao_aluno from tb_aluno
 							where  situacao_aluno = 'AP' or situacao_aluno = 'RP';");
