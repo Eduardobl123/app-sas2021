@@ -1,0 +1,79 @@
+/*Tabela*/
+
+#corpo table{
+	width: 100%;
+	/*border-collapse: collapse;*/
+}
+
+#corpo th, td{
+
+	padding: 7px;
+
+}
+
+#corpo th{
+
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+	background-color: #285E7D;
+	color: white;
+}
+
+#corpo tr.alternado{
+
+	background-color: #efefef
+
+}
+
+#corpo .numero{
+
+	text-align: right;
+}
+
+#corpo tr:hover{
+
+	background-color: #c3e6e5;
+}
+
+.centralizado{
+
+	text-align: center;
+}
+
+.alinhado-direta{
+
+	text-align: right;
+}
+
+#botoes{
+
+	float: right;
+
+}
+
+#botoes input{
+
+	color: #fff;
+	background-color: #377AFF;
+	border:1px solid #074DDA;
+	padding: 5px 20px;
+	height: 45px;
+
+	background: linear-gradient(to bottom, #377AFF, #2258C4);
+
+}
+
+#botoes input:hover{
+
+	color: white;
+	background: linear-gradient(to bottom, #396FDB, #033DB2);
+}
+
+#corpo img{
+
+	height: 40px;
+}

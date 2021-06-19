@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#cabeçalho{
+	width: 100%;
+	height: 120px;
+	background-color: #0088B7;
+}
+
+#cabeçalho img{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#menu-lateral{
+	width: 300px;
+	height: 720px; 
+	background-color: #005D7F;
+	float: left;
+}
+
+#corpo{
+	width: 1000px;
+	height: 400px;
+	float: left;
+	border: 50px solid white;
+}
+
+#menu-lateral ul{
+
+	list-style-type: none;		
+
+}
+
+
+#menu-lateral a{
+
+	text-decoration: none;
+	width: 100%;
+	height: 60px;
+	display: block;
+	color: white;
+	text-indent: 40px;
+	line-height: 60px;
+	border-bottom: 0.1px solid #4A6A94;
+
+}
+
+#inicio{
+
+	background: url(../imagens/inicio.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#minhasatividades{
+
+	background: url(../imagens/minhas-atividades.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#historicoefeedback{
+
+	background: url(../imagens/historico-e-feedback.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#mais-informações{
+
+	background: url(../imagens/info.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#sair{
+
+	background: url(../imagens/sair.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#inicio:hover{
+
+	background: #007AA6 url(../imagens/inicio.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#minhasatividades:hover{
+
+	background: #007AA6 url(../imagens/minhas-atividades.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#historicoefeedback:hover{
+
+	background: #007AA6 url(../imagens/historico-e-feedback.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#mais-informações:hover{
+
+	background: #007AA6 url(../imagens/info.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#sair:hover{
+	background: #007AA6 url(../imagens/sair.png) no-repeat left center;
+	background-size: 40px;
+}
+
+

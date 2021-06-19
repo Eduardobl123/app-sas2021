@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#cabeçalho{
+	width: 100%;
+	height: 120px;
+	background-color: #0088B7;
+}
+
+#cabeçalho img{
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#menu-lateral{
+	width: 300px;
+	height: 720px; 
+	background-color: #005D7F;
+	float: left;
+}
+
+#corpo{
+	width: 1000px;
+	height: 400px;
+	float: left;
+	border: 50px solid white;
+}
+
+#menu-lateral ul{
+
+	list-style-type: none;		
+
+}
+
+
+#menu-lateral a{
+
+	text-decoration: none;
+	width: 100%;
+	height: 60px;
+	display: block;
+	color: white;
+	text-indent: 40px;
+	line-height: 60px;
+	border-bottom: 0.1px solid #4A6A94;
+
+}
+
+#inicio{
+
+	background: url(../imagens/inicio.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#minhasatividades{
+
+	background: url(../imagens/minhas-atividades.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#historicoefeedback{
+
+	background: url(../imagens/historico-e-feedback.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#sair{
+
+	background: url(../imagens/sair.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#inicio:hover{
+
+	background: #007AA6 url(../imagens/inicio.png) no-repeat left center;
+	background-size: 40px;
+}
+
+#minhasatividades:hover{
+
+	background: #007AA6 url(../imagens/minhas-atividades.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#historicoefeedback:hover{
+
+	background: #007AA6 url(../imagens/historico-e-feedback.png) no-repeat left center;
+	background-size: 40px;
+
+}
+
+#sair:hover{
+	background: #007AA6 url(../imagens/sair.png) no-repeat left center;
+	background-size: 40px;
+}
+
+
+/*Tabela*/
+
+#corpo table{
+	width: 100%;
+	/*border-collapse: collapse;*/
+}
+
+#corpo th, td{
+
+	padding: 7px;
+
+}
+
+#corpo th{
+
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+	background-color: #285E7D;
+	color: white;
+}
+
+#corpo tr.alternado{
+
+	background-color: #efefef
+
+}
+
+#corpo .numero{
+
+	text-align: right;
+}
+
+#corpo tr:hover{
+
+	background-color: #c3e6e5;
+}
+
+.centralizado{
+
+	text-align: center;
+}
+
+.alinhado-direta{
+
+	text-align: right;
+}
+
+#botoes{
+
+	float: right;
+
+}
+
+#botoes input{
+
+	color: #fff;
+	background-color: #377AFF;
+	border:1px solid #074DDA;
+	padding: 5px 20px;
+	height: 45px;
+
+	background: linear-gradient(to bottom, #377AFF, #2258C4);
+
+}
+
+#botoes input:hover{
+
+	color: white;
+	background: linear-gradient(to bottom, #396FDB, #033DB2);
+}

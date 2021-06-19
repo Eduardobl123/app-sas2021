@@ -1,0 +1,66 @@
+fieldset{
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+
+}
+
+legend{
+
+	font-weight: bold;
+}
+
+label{
+	
+	display: block;
+	cursor: pointer;
+}
+
+input[type= "text"]{ 
+
+	width: 20em;
+
+ }
+
+ textarea{
+
+ 	width: 20em;
+ 	height: 10em;
+ }
+
+ input[type= "radio"]{ 
+
+	margin-right: 1em;
+
+ }
+
+ input[type= "submit"]{
+
+ 	margin-top: 5px;
+ }
+
+ label{
+
+ 	margin-top: 5px;
+
+ }
+
+ .botoes input{
+
+ 	margin-top: 20px;
+	color: #fff;
+	background-color: #377AFF;
+	border:1px solid #074DDA;
+	padding: 5px 20px;
+	height: 45px;
+
+	background: linear-gradient(to bottom, #377AFF, #2258C4);
+
+}
+
+.botoes input:hover{
+
+	color: white;
+	background: linear-gradient(to bottom, #396FDB, #033DB2);
+}
