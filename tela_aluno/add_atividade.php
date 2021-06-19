@@ -82,7 +82,7 @@ echo "Não foi possível enviar o arquivo, tente novamente";
 }
  
 
-$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 /*$str_insert = "select sp_add_atividade('$nome', '$descricao','$tipo1', '$tipo1', '$tipo3', '$data_inicio', '$data_fim', $ch_total, '$login', '$nome_final','$caminho')";*/
 
