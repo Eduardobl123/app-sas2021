@@ -40,7 +40,7 @@ require_once "../validador_acesso_professor.php";
 				</tr>
 
 				<?php
-							$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+							$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 							$login = $_SESSION['login'];
 							$result = mysqli_query($link, "select pnome_aluno, unome_aluno, rga, data_de_envio, situacao_atividade, id_atividade, id_aluno
 							from tb_aluno inner join tb_atividade on id_aluno = login and id_professor='$login'
