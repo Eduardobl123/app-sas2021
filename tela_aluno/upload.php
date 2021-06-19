@@ -53,12 +53,12 @@ $nome_final = $_FILES['arquivo']['name'];
     echo $nome_final;
 }
 
-$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+/*$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 							
 
 $caminho = $_UP['pasta'] . $nome_final;
-$result = mysqli_query($link, "select sp_add_doc('$nome_final','$caminho',113)");
+$result = mysqli_query($link, "select sp_add_doc('$nome_final','$caminho',113)");*/
 
 
 
