@@ -39,7 +39,7 @@ require_once "../validador_acesso_professor.php";
 		
 		<?php
 			if(isset($_GET['id_atv'])&& isset($_GET['id_alu'])){
-				$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+				$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 				$result = mysqli_query($link, "select * from tb_atividade where id_atividade = '".$_GET['id_atv']."'");
 				$dado_atividades = mysqli_fetch_all($result);
