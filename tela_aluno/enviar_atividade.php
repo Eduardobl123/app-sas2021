@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 $login = $_SESSION['login'];
 
