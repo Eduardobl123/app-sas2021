@@ -45,10 +45,10 @@ require_once "../validador_acesso_professor.php";
 				</tr>
 				<?php
 					$login = $_SESSION['login'];
-							$conexao = pg_connect("host=localhost port = 5432 dbname=bd_atividades_complementares user=postgres password=1247") or
+							$conexao = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas") or
 							die ("Não foi possível conectar ao servidor PostGreSQL");
 
-							$result = pg_query($conexao, 'select id_atividade,  tipo_participacao_nv1,nome_atividade, periodo_atividade,ch_total_atividade, ch_aproveitada  from tb_atividade inner join tb_aluno
+							$result = mysqli_query($conexao, 'select id_atividade,  tipo_participacao_nv1,nome_atividade, periodo_atividade,ch_total_atividade, ch_aproveitada  from tb_atividade inner join tb_aluno
 									on login = id_aluno
 								where login = '."'".$login."' and situacao_atividade = ". "'Salvo'");
 							$dado_atividades = pg_fetch_all($result);
