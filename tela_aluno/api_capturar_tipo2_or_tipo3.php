@@ -1,7 +1,7 @@
 <?
     if(isset($_GET['tipo1'])){
         if(isset($_GET['tipo2'])){
-            $link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+            $link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
     
             $result = mysqli_query($link, "select DISTINCT tipo_participacao_nv3 from tb_categoria_atividade
             where tipo_participacao_nv1 = '".$_GET['tipo1']."'"." and tipo_participacao_nv2 = '".$_GET['tipo2']."'");
@@ -34,7 +34,7 @@
 
             /* Open a connection */
 
-            $mysqli = new mysqli("127.0.0.1:3306", "root", "12345678", "bd_saas");
+            $mysqli = new mysqli("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
             /* check connection */ 
             if (mysqli_connect_errno()) {
