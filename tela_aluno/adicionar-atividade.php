@@ -174,7 +174,7 @@ require_once "../validador_acesso_aluno.php";
 					<select name="tipo1" id="tipo1"  onchange ="ativaDois(this.value)">
 					<option value=""></option>
 					<?php
-							$link = mysqli_connect("127.0.0.1:3306", "root", "12345678", "bd_saas");
+							$link = mysqli_connect("bd-saas.mysql.uhserver.com:3306", "eduardo_bruno", "brunosafado*2021", "bd_saas");
 
 							$result = mysqli_query($link, 'select DISTINCT tipo_participacao_nv1 from tb_categoria_atividade');
 							$dado_tipo1 = mysqli_fetch_all($result);
